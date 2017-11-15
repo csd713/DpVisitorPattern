@@ -10,6 +10,8 @@ public class VisitorDemo {
 
 		System.out.println("Accepting Print visitor:");
 		car.accept(new CarElementPrintVisitor());
-
+		
+		System.out.println("\nAccepting Do visitor");
+		car.accept(new CarElementDoVisitor());
 	}
 }
